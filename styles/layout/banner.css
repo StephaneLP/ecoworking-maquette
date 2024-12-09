@@ -1,0 +1,191 @@
+/*************************************************/
+/* BANDEAU
+/*************************************************/
+
+.bandeau_left {
+    background-color: var(--color-bg-bandeau-primary);
+}
+
+.bandeau {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    img {
+        height: 6rem;
+        padding: 1rem 0;
+        background-color: var(--color-bg-bandeau-primary);
+    }    
+
+    .logo-separator {
+        border-left: 2rem solid var(--color-bg-bandeau-primary);
+        border-bottom:  6rem solid transparent;
+    }
+
+    .logo-title {
+        font-size: 2rem;
+        font-family: var(--font-family-title);
+        color: var(--color-font-bandeau-title-primary);
+
+        span {
+            color: var(--color-font-bandeau-title-secondary);
+        }      
+    }
+
+    img:hover, .logo-separator:hover, .logo-title:hover {
+        &, ~.logo-title    {
+            color: var(--color-hover-primary);
+
+            span {
+                color: var(--color-hover-primary);
+            }
+        }
+    }
+
+    &:focus {
+        .logo-title     {
+            color: var(--color-hover-secondary);
+
+            span {
+                color: var(--color-hover-secondary);
+            }
+        }
+    }
+} 
+
+.menu {
+    display: flex;
+    gap: 2.2rem;
+    height: 100%;
+    padding-left: 0;
+
+    >li {
+        display: flex;
+        align-items: center;
+
+        >a, .menu-section, .menu-section::after {
+            font-size: 1.2rem;
+            color: var(--color-font-menu-primary);
+            text-wrap: nowrap;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .menu-section {
+            display: flex;
+            align-items: center;
+
+            &::after  {
+                content: "";
+                border-left: 0.45rem solid var(--color-font-menu-primary);
+                border-top:  0.35rem solid transparent;
+                border-bottom:  0.35rem solid transparent;
+                margin-left: 0.5rem;
+                margin-top: 0.18rem;
+            }
+        }
+
+        >a:hover {
+            color: var(--color-hover-font-primary);
+        }
+
+        >a:focus {
+            color: var(--color-hover-secondary); 
+        }
+
+        .connect {
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            background-color: var(--color-bg-dark-primary);
+            color: var(--color-font-light);
+            font-size: 1rem;
+
+            &:hover {
+                background-color: var(--color-hover-primary);
+                color: var(--color-font-light);
+            }
+
+            &:focus {
+                background-color: var(--color-hover-secondary);
+                color: var(--color-font-light);
+            }
+        }        
+    }
+
+    >li:has(.menu-section) {
+        cursor: pointer;
+
+        &:hover, &:has(a:focus) {
+            .menu-section {
+                color: var(--color-hover-font-primary);
+            }
+
+            .menu-section::after {
+                transform: rotate(90deg);
+                border-left-color: var(--color-hover-font-primary);
+            }
+        }
+    }
+}
+
+.globalmenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    background-color: var(--color-bg-bandeau-submenu);
+    box-shadow: 0 5px 10px var(--color-shadow-primary);
+
+    >div {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 4rem;
+
+        >div >span {
+            font-size: 1.2rem;
+            color: var(--color-font-submenu-title);
+        }
+    }
+}
+
+.submenu {
+    list-style-type: none;
+    padding: 1rem 0;
+    line-height: 2rem;
+
+    a {
+        text-wrap: nowrap;
+        font-size: 1.1rem;
+        color: var(--color-font-light);
+
+        &:hover {
+            color: var(--color-hover-submenu-primary);
+        }
+
+        &:focus {
+            color: var(--color-hover-submenu-secondary);    
+            font-weight: 600;
+         }
+    }
+}
+
+/* ANIMATION DU MENU DÉROULANT */
+
+.menu {
+    >li:hover, >li:has(a:focus) {
+        .globalmenu {
+            height: calc-size(auto, size);
+            padding: 1rem 0;
+        }
+    }
+
+    .globalmenu {
+        transition: 0.4s ease-in-out;
+        height: 0;
+        overflow: hidden;
+    }    
+}

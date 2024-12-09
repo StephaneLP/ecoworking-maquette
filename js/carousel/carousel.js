@@ -3,7 +3,7 @@
 /////////////////////////////////////////////////////
 
 const arrCarousel = [
-    {url: "/assets/img/carousel/carrousel1.jpg", titre: "Diapositive 1"},
+    {url: "/assets/img/carousel/carrousel1.jpg", titre: "Bureaux en open space ou privatifs<br>dans un cadre convivial"},
     {url: "/assets/img/carousel/carrousel2.jpg", titre: "Diapositive 2"},
     {url: "/assets/img/carousel/carrousel3.jpg", titre: "Diapositive 3"},
 ]
@@ -62,7 +62,7 @@ function changeImage (id, mode) {
     }
 
     elCarousel.style.backgroundImage = `url(${arrCarousel[counter].url})`
-    elTitre.innerText = arrCarousel[counter].titre
+    elTitre.innerHTML = arrCarousel[counter].titre
 }
 
 const addSlideLink = (id) => {

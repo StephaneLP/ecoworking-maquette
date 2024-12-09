@@ -1,0 +1,30 @@
+/*************************************************/
+/* STRUCTURE
+/*************************************************/
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    min-height: 100vh;
+    font-family: var(--font-family-base);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: var(--color-bg-bandeau-secondary);
+    box-shadow: 0 5px 10px var(--color-shadow-primary);
+}
+
+main {
+    background-color: var(--color-bg-light-primary);
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
