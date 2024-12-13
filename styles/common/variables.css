@@ -19,9 +19,11 @@
 
     /* FONT COLOR */
     --color-font-light: #ffffff;
+    --color-font-medium: #bdc8d4;
     --color-font-dark: #38414d;
     --color-font-title-primary: #56606b;
     --color-font-title-secondary: #4e8f60;
+    --color-font-title-tertiary: #f5cb7e;
 
     /* LIENS, HOVER & FOCUS */
     --color-hover-primary: #b68d41;
@@ -43,8 +45,8 @@
     --font-family-title: cursive, Verdana, sans-serif;
 
     /* TRANSITIONS */
-    --transition-bandeau: 0.3s ease-in-out;
-    --transition-carrousel: 0.3s ease-in-out;
+    --transition-primary: 0.3s ease-in-out;
+    --transition-secondary: 0.5s ease-in-out;
 
     /* --color-bg-primary-darker: #3e4b5a;
     --color-bg-primary: #576c79;    
