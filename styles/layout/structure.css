@@ -4,9 +4,10 @@
 
 body {
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     font-family: var(--font-family-base);
+    color: var(--color-font-dark)
 }
 
 header {
@@ -21,6 +22,10 @@ header {
 
 main {
     background-color: var(--color-bg-light-primary);
+}
+
+footer {
+    background-color: var(--color-bg-dark-tertiary);
 }
 
 .container {

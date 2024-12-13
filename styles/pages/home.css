@@ -5,8 +5,10 @@
 .carousel {
     display: flex;
     justify-content: space-between;
-    height: 600px;
+    width: 100%;
+    height: 750px;
     background-image: none;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     transition: all 0.8s ease-out;
@@ -15,22 +17,27 @@
         display: flex;
         align-items: center;
         padding: 0 1.5rem;
-        backdrop-filter: brightness(100%) blur(0.25rem);
-        transition: all 0.5s;
+        backdrop-filter: blur(0.25rem);
+        transition: backdrop-filter var(--transition-carrousel);
 
         span {
-            transition: all 0.5s;            
             font-family: "Poppins-thin", Verdana, sans-serif;
             font-size: 6rem;
-            color: var(--color-font-bright);
+            color: var(--color-font-light);
+            transition: color var(--transition-carrousel);            
         }
         
         &:hover {
-            
-            backdrop-filter: brightness(50%) blur(0);
+            backdrop-filter: brightness(80%) blur(0);
 
             span {
-                color: var(--color-arrows);
+                color: var(--color-hover-secondary);
+            }
+        }
+
+        &:focus-visible {
+            span {
+                outline: 2px solid var(--color-hover-primary);
             }
         }
     }
@@ -42,17 +49,28 @@
         .carousel_infos {
             flex-grow: 1;
             display: flex;
-            align-items: center;
+            align-items: flex-end;
+            width: 100%;
 
-            .title {
+            >div {
+                margin-bottom: 2rem;
                 padding: 1rem 4rem;
-                backdrop-filter: brightness(75%) blur(0.25rem);
+                backdrop-filter: blur(0.25rem);
                 border-radius: 10px;
-                font-size: 3rem;
-                color: var(--color-font-bright);
-            }
+                color: var(--color-font-light);
+                text-align: center;
+
+                .carousel_infos-title {
+                    font-family: var(--font-family-title);
+                    font-size: 2.6rem;
+                 }
+
+                .carousel_infos-subtitle {
+                    font-size: 2rem;
+                }
+            }            
         }
-        
+
         .carousel_nav {
             display: flex;
             justify-content: center;
@@ -62,17 +80,142 @@
             .slideLink {
                 width: 4rem;
                 height: 0.3rem;
-                background-color: var(--color-arrows);
-                transition: 0.5s;
+                background-color: var(--color-hover-arrows);
+                transition: background-color var(--transition-carrousel);
 
                 &:hover {
-                    background-color: var(--color-font-bright);
+                    background-color: var(--color-hover-secondary);
+                }
+
+                &:focus-visible {
+                    background-color: var(--color-hover-secondary);
                 }
             }
 
             .active {
-                background-color: var(--color-font-bright);
+                background-color: var(--color-font-light);
             }
         }        
+    }
+}
+
+.presentation {
+    padding: 5rem 0;
+
+    p {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .presentation-cities {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+        gap: 5rem;
+        margin-top: 5rem;
+        
+        .city-img {
+            position: relative;
+            /* border: solid 8px var(--color-bg-light-decondary); */
+            box-shadow: 0 0 10px 5px var(--color-shadow-secondary);
+            /* border-radius: 50%; */
+
+            img{
+                display: block;
+                width: 100%;
+                height: auto;
+                /* border-radius: 50%; */
+            }                
+
+            .city-overlay {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--color-bg-dark-secondary);
+                overflow: hidden;
+                opacity: 80%;
+                transition: .5s ease;
+
+                .city-connect {
+                    padding: 0.4rem 0.8rem;
+                    border-radius: 5px;
+                    background-color: var(--color-bg-button);
+                    color: var(--color-font-light);
+                    font-size: 0.9rem;
+                    transition: background-color var(--transition-bandeau);
+        
+                    &:hover {
+                        background-color: var(--color-hover-primary);
+                        color: var(--color-font-light);
+                    }
+                }
+            }
+
+            &:hover {
+                .city-overlay {
+                    height: 100%;
+                }
+            }
+        }
+
+        h3 {
+            margin-top: 2rem;
+        }
+
+    }
+}
+
+
+
+.spaces {
+    padding: 5rem 0;
+    background-image: url(/assets/img/home/espace.jpg);
+    /* background-image: linear-gradient(to bottom, #232e3bef, #232e3bef), url(/assets/img/home/espace.jpg); */
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    h2 {
+       color: var(--color-font-light);
+    }
+
+    .spaces-top {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+        gap: 5rem;
+        margin-top: 5rem;
+
+        >div {
+            position: relative;
+
+            .space {
+                height: 300px;
+                background-color: var(--color-bg-dark-primary);
+            }
+
+            .space-overlay {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 0;
+                overflow: hidden;
+                transition: .5s ease;
+                background-color: var(--color-bg-dark-secondary);
+            }
+
+            &:hover {
+                .space-overlay {
+                    height: 100%;
+                }
+            }
+        }
     }
 }

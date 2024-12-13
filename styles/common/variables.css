@@ -1,29 +1,4 @@
 /*************************************************/
-/* FONTS
-/*************************************************/
-
-@font-face {
-    font-family: "Poppins-Thin";
-    src: url(/assets/fonts/Poppins/Poppins-Thin.ttf);
-}
-@font-face {
-font-family: "Poppins-ExtraLight";
-src: url(/assets/fonts/Poppins/Poppins-ExtraLight.ttf);
-}
-@font-face {
-font-family: "Poppins-Light";
-src: url(/assets/fonts/Poppins/Poppins-Light.ttf);
-}
-@font-face {
-font-family: "Poppins-Regular";
-src: url(/assets/fonts/Poppins/Poppins-Regular.ttf);
-}
-@font-face {
-font-family: "Poppins-Medium";
-src: url(/assets/fonts/Poppins/Poppins-Medium.ttf);
-}
-
-/*************************************************/
 /* VARIABLES
 /*************************************************/
 
@@ -33,67 +8,56 @@ src: url(/assets/fonts/Poppins/Poppins-Medium.ttf);
     /* BACKGROUND COLOR */
     --color-bg-light-primary: #f0f0f0;
     --color-bg-light-decondary: #ffffff;
-    --color-bg-dark-primary: #576c79;
+    --color-bg-dark-primary: #4a5868;
     --color-bg-dark-secondary: #3e4b5a;
+    --color-bg-dark-tertiary: #3c4d41;
+    --color-bg-button: #4e865e;
 
     /* SHADOW COLOR */
     --color-shadow-primary: #4d4d4d;
+    --color-shadow-secondary: #9c9c9c;
 
     /* FONT COLOR */
     --color-font-light: #ffffff;
-    --color-font-dark: #303841;
+    --color-font-dark: #38414d;
     --color-font-title-primary: #56606b;
-    --color-font-title-secondary: #569c6a;
+    --color-font-title-secondary: #4e8f60;
 
-    /* HOVER & FOCUS */
-    --color-hover-primary: #3f8051;
-    --color-hover-font-primary: #2d7e44;
-    --color-hover-secondary: #b68d41;
-    --color-hover-submenu-primary: #7cd896;
-    --color-hover-submenu-secondary: #e7ba66;
+    /* LIENS, HOVER & FOCUS */
+    --color-hover-primary: #b68d41;
+    --color-hover-secondary: #f0ba57;
+    --color-hover-arrows: #a0a0a0;
 
-    /* BANDEAU */
+    /* BANDEAU & MENU */
     --color-bg-bandeau-primary: var(--color-bg-dark-secondary);
     --color-bg-bandeau-secondary: var(--color-bg-light-primary);
-    --color-bg-bandeau-submenu: #4a5868;
+    --color-bg-bandeau-submenu: var(--color-bg-dark-primary);
     --color-font-bandeau-title-primary: var(--color-font-title-primary);
     --color-font-bandeau-title-secondary: var(--color-font-title-secondary);
     --color-font-menu-primary: var(--color-font-dark);
     --color-font-submenu: #bdc8d4;
     --color-font-submenu-title: #bdc8d4;
     
-
     /* FONT FAMILY */
-    --font-family-base: Geneva, Verdana, sans-serif;
+    --font-family-base: 'Segoe UI', Verdana, sans-serif;
     --font-family-title: cursive, Verdana, sans-serif;
 
+    /* TRANSITIONS */
+    --transition-bandeau: 0.3s ease-in-out;
+    --transition-carrousel: 0.3s ease-in-out;
 
-
-
-
-
-
-
-    --color-bg-primary-darker: #3e4b5a;
+    /* --color-bg-primary-darker: #3e4b5a;
     --color-bg-primary: #576c79;    
     --color-bg-secondary: #fdfdfd;
-
     --color-bg-secondary-darker: #eeeeee;
     --color-bg-logo: #7aa5d2;
     --color-bg-grid-hover: #8aaacc;
     --color-bg-grid-shadow: #808080;
-    /* FONT COLOR */
     --color-font-bright: #ffffff;
     --color-font-logo: #93e4ab;
-
     --color-font-h2: #758b99;
     --color-font-h3: #7aa5d2;
-    --color-arrows: #a0a0a0;
-    /* HOVER */
     --color-font-menu-hover: #93e4ab;
-    --color-font-menu-hover-darker: #5aaa72;
+    --color-font-menu-hover-darker: #5aaa72; */
     
-
-
-
 }

@@ -30,14 +30,16 @@
         font-size: 2rem;
         font-family: var(--font-family-title);
         color: var(--color-font-bandeau-title-primary);
+        transition: color var(--transition-bandeau);
 
         span {
+            transition: color var(--transition-bandeau);
             color: var(--color-font-bandeau-title-secondary);
         }      
     }
 
     img:hover, .logo-separator:hover, .logo-title:hover {
-        &, ~.logo-title    {
+        &, ~.logo-title {
             color: var(--color-hover-primary);
 
             span {
@@ -46,13 +48,9 @@
         }
     }
 
-    &:focus {
-        .logo-title     {
-            color: var(--color-hover-secondary);
-
-            span {
-                color: var(--color-hover-secondary);
-            }
+    &:focus-visible {
+        .logo-title {
+            outline: 2px solid var(--color-hover-primary);
         }
     }
 } 
@@ -69,9 +67,10 @@
 
         >a, .menu-section, .menu-section::after {
             font-size: 1.2rem;
+            font-weight: 500;
             color: var(--color-font-menu-primary);
             text-wrap: nowrap;
-            transition: all 0.3s ease-in-out;
+            transition: color var(--transition-bandeau), transform var(--transition-bandeau);
         }
 
         .menu-section {
@@ -89,27 +88,23 @@
         }
 
         >a:hover {
-            color: var(--color-hover-font-primary);
+            color: var(--color-hover-primary);
         }
 
-        >a:focus {
-            color: var(--color-hover-secondary); 
+        >a:focus-visible {
+            outline: 2px solid var(--color-hover-primary);
         }
 
         .connect {
             padding: 0.4rem 0.8rem;
-            border-radius: 6px;
+            border-radius: 5px;
             background-color: var(--color-bg-dark-primary);
             color: var(--color-font-light);
-            font-size: 1rem;
+            font-size: 0.9rem;
+            transition: background-color var(--transition-bandeau);
 
             &:hover {
                 background-color: var(--color-hover-primary);
-                color: var(--color-font-light);
-            }
-
-            &:focus {
-                background-color: var(--color-hover-secondary);
                 color: var(--color-font-light);
             }
         }        
@@ -120,12 +115,12 @@
 
         &:hover, &:has(a:focus) {
             .menu-section {
-                color: var(--color-hover-font-primary);
+                color: var(--color-hover-primary);
             }
 
             .menu-section::after {
                 transform: rotate(90deg);
-                border-left-color: var(--color-hover-font-primary);
+                border-left-color: var(--color-hover-primary);
             }
         }
     }
@@ -135,7 +130,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100vw;
+    width: 100%;
     background-color: var(--color-bg-bandeau-submenu);
     box-shadow: 0 5px 10px var(--color-shadow-primary);
 
@@ -161,15 +156,15 @@
         text-wrap: nowrap;
         font-size: 1.1rem;
         color: var(--color-font-light);
+        transition: color var(--transition-bandeau);
 
         &:hover {
-            color: var(--color-hover-submenu-primary);
+            color: var(--color-hover-secondary);
         }
 
-        &:focus {
-            color: var(--color-hover-submenu-secondary);    
-            font-weight: 600;
-         }
+        &:focus-visible {
+            outline: 2px solid var(--color-hover-secondary);
+        }
     }
 }
 

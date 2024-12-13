@@ -3,9 +3,21 @@
 /////////////////////////////////////////////////////
 
 const arrCarousel = [
-    {url: "/assets/img/carousel/carrousel1.jpg", titre: "Bureaux en open space ou privatifs<br>dans un cadre convivial"},
-    {url: "/assets/img/carousel/carrousel2.jpg", titre: "Diapositive 2"},
-    {url: "/assets/img/carousel/carrousel3.jpg", titre: "Diapositive 3"},
+    {
+        url: "/assets/img/carousel/carrousel1.jpg",
+        titre: "Vous cherchez un espace de travail convivial",
+        SousTitre: "Bureaux en open space ou privatifs",
+    },
+    {
+        url: "/assets/img/carousel/carrousel2.jpg",
+        titre: "Vous êtes soucieux de l'environnement",
+        SousTitre: "Énergie bas carbone - Informatique GreenIt",
+    },
+    {
+        url: "/assets/img/carousel/carrousel3.jpg",
+        titre: "Vous cherchez une salle de réunion",
+        SousTitre: "Équipement moderne - Vidéoprojecteur",
+    },
 ]
 
 const period = 5000
@@ -15,9 +27,10 @@ const period = 5000
 /////////////////////////////////////////////////////
 
 const elCarousel = document.querySelector(".carousel")
-const elPrecedent = document.querySelector(".btnPrev")
-const elSuivant = document.querySelector(".btnNext")
-const elTitre = document.querySelector(".title")
+const elPrecedent = document.querySelector(".carousel_btnPrev")
+const elSuivant = document.querySelector(".carousel_btnNext")
+const elTitre = document.querySelector(".carousel_infos-title")
+const elSousTitre = document.querySelector(".carousel_infos-subtitle")
 const elNav = document.querySelector(".carousel_nav")
 
 /////////////////////////////////////////////////////
@@ -63,6 +76,7 @@ function changeImage (id, mode) {
 
     elCarousel.style.backgroundImage = `url(${arrCarousel[counter].url})`
     elTitre.innerHTML = arrCarousel[counter].titre
+    elSousTitre.innerHTML = arrCarousel[counter].SousTitre
 }
 
 const addSlideLink = (id) => {

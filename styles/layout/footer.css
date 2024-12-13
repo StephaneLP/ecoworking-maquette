@@ -1,0 +1,16 @@
+.footer-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+
+    img {
+        width: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    span {
+        color: var(--color-font-light)
+    }
+}
