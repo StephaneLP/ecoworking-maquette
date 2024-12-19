@@ -1,0 +1,62 @@
+@import url("variables.css");
+@import url("fonts.css");
+
+/*************************************************/
+/* NORMALISATION
+/*************************************************/
+
+* {
+    box-sizing: border-box;
+    margin: 0; 
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: var(--font-family-title);
+}
+
+h1, h2 {
+    font-size: 2.5rem;
+    color: var(--color-font-title-secondary);
+}
+
+h3 {
+    font-size: 2rem;
+    color: var(--color-font-title-primary);
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+/*************************************************/
+/* COMMON
+/*************************************************/
+
+.button {
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    background-color: var(--color-bg-button);
+    color: var(--color-font-light);
+    font-size: 0.9rem;
+    transition: background-color var(--transition-primary);
+
+    &:hover {
+        background-color: var(--color-hover-primary);
+        color: var(--color-font-light);
+    }
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}

@@ -1,6 +1,39 @@
 /*************************************************/
-/* BANDEAU
+/* STRUCTURE (STYLE GLOBAL)
 /*************************************************/
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: var(--font-family-base);
+    color: var(--color-font-dark)
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: var(--color-bg-bandeau-secondary);
+    box-shadow: 0 5px 10px var(--color-shadow-primary);
+}
+
+main {
+    background-color: var(--color-bg-light-primary);
+}
+
+footer {
+    background-color: var(--color-bg-dark-tertiary);
+}
+
+/*************************************************/
+/* BANDEAU HEADER
+/*************************************************/
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 .bandeau_left {
     background-color: var(--color-bg-bandeau-primary);
@@ -57,7 +90,7 @@
 
 .menu {
     display: flex;
-    gap: 2.2rem;
+    gap: 2.5rem;
     height: 100%;
     padding-left: 0;
 
@@ -65,7 +98,7 @@
         display: flex;
         align-items: center;
 
-        >a, .menu-section, .menu-section::after {
+        .link, .menu-section, .menu-section::after {
             font-size: 1.2rem;
             font-weight: 500;
             color: var(--color-font-menu-primary);
@@ -76,6 +109,7 @@
         .menu-section {
             display: flex;
             align-items: center;
+            cursor: default;
 
             &::after  {
                 content: "";
@@ -87,32 +121,16 @@
             }
         }
 
-        >a:hover {
+        .link:hover {
             color: var(--color-hover-primary);
         }
 
-        >a:focus-visible {
+        .link:focus-visible {
             outline: 2px solid var(--color-hover-primary);
         }
-
-        .connect {
-            padding: 0.4rem 0.8rem;
-            border-radius: 5px;
-            background-color: var(--color-bg-dark-primary);
-            color: var(--color-font-light);
-            font-size: 0.9rem;
-            transition: background-color var(--transition-primary);
-
-            &:hover {
-                background-color: var(--color-hover-primary);
-                color: var(--color-font-light);
-            }
-        }        
     }
 
     >li:has(.menu-section) {
-        cursor: pointer;
-
         &:hover, &:has(a:focus) {
             .menu-section {
                 color: var(--color-hover-primary);
@@ -140,9 +158,13 @@
         flex-wrap: wrap;
         gap: 4rem;
 
-        >div >span {
-            font-size: 1.2rem;
-            color: var(--color-font-submenu-title);
+        >div {
+            >span {
+                font-size: 1.2rem;
+                color: var(--color-font-submenu-title);
+                margin: 0 auto;
+                cursor: default;
+            }
         }
     }
 }
@@ -166,6 +188,16 @@
             outline: 2px solid var(--color-hover-secondary);
         }
     }
+
+    /* .link-all {
+        padding: 0.25rem 0.5rem;
+        border: solid 1px var(--color-font-submenu-title);
+        border-radius: 5px;
+        
+        &:hover {
+            border-color: var(--color-hover-secondary);
+        }
+    }     */
 }
 
 /* ANIMATION DU MENU DÉROULANT */
@@ -183,4 +215,25 @@
         height: 0;
         overflow: hidden;
     }    
+}
+
+/*************************************************/
+/* BANDEAU FOOTER
+/*************************************************/
+
+.footer-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+
+    img {
+        width: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    span {
+        color: var(--color-font-light)
+    }
 }

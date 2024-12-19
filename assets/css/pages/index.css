@@ -140,20 +140,6 @@
                 opacity: 0;
                 background-image: none;
                 transition: all var(--transition-primary);
-
-                .city-connect {
-                    padding: 0.4rem 0.8rem;
-                    border-radius: 5px;
-                    background-color: var(--color-bg-button);
-                    color: var(--color-font-light);
-                    font-size: 0.9rem;
-                    transition: background-color var(--transition-primary);
-
-                    &:hover {
-                        background-color: var(--color-hover-primary);
-                        color: var(--color-font-light);
-                    }
-                }
             }
 
             &:hover {
@@ -173,7 +159,7 @@
 
 .places {
     padding: 5rem 0;
-    background-image: url(/assets/img/home/espace.jpg);
+    background-image: url(/assets/img/index/espace.jpg);
     /* background-image: linear-gradient(to bottom, #232e3bef, #232e3bef), url(/assets/img/home/espace.jpg); */
     background-attachment: fixed;
     background-position: center;
@@ -195,7 +181,7 @@
             flex-direction: column;
             height: 100%;
             background-color: var(--color-bg-dark-secondary);
-            box-shadow: 0 0 10px 10px #181c22;
+            box-shadow: 0 0 10px 6px #0a0b0e;
 
             .place-header {
                 display: flex;
@@ -264,20 +250,6 @@
                     overflow: hidden;
                     transition: all var(--transition-primary);
                     background-color: var(--color-bg-dark-secondary);
-
-                    .place-connect {
-                        padding: 0.4rem 0.8rem;
-                        border-radius: 5px;
-                        background-color: var(--color-bg-button);
-                        color: var(--color-font-light);
-                        font-size: 0.9rem;
-                        transition: background-color var(--transition-primary);
-            
-                        &:hover {
-                            background-color: var(--color-hover-primary);
-                            color: var(--color-font-light);
-                        }
-                    }
                 } 
             }
                    
@@ -285,15 +257,11 @@
                 .place-containt {
                     border-top: solid 1px var(--color-shadow-secondary);
                 }
+
                 .place-overlay {
                     height: 100%;
                 }
             }            
         }
-
-
-
-
-        
     }
 }
