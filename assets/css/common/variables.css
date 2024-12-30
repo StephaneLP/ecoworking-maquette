@@ -12,7 +12,7 @@
     --color-bg-dark-secondary: #3e4b5a;
     --color-bg-dark-tertiary: #3c4d41;
     --color-bg-button: #4e865e;
-    --color-bg-separator: #5c6977;
+    --color-bg-separator: #647383;
     --color-bg-note: #b68d41;
 
     /* SHADOW COLOR */
@@ -43,7 +43,7 @@
     --color-font-submenu-title: #bdc8d4;
     
     /* FONT FAMILY */
-    --font-family-base: 'Segoe UI', Verdana, sans-serif;
+    --font-family-base: 'Roboto-Regular', Verdana, sans-serif;
     --font-family-title: cursive, Verdana, sans-serif;
 
     /* TRANSITIONS */

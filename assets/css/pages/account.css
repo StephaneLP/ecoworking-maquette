@@ -1,0 +1,54 @@
+/*************************************************/
+/* PRÉSENTATION
+/*************************************************/
+
+.connect {
+    padding: 5rem 0;
+
+    /* p {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 1.5rem;
+    } */
+
+    .connect_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 1fr;
+        gap: 1rem;
+
+        >div {
+            /* border: solid 1px var(--color-bg-separator); */
+            box-shadow: 5px 5px 10px 0 var(--color-shadow-secondary);
+        }
+
+        h3 {
+            margin-top: 2rem;
+        }
+    }
+}
+
+/* LIENS */
+
+.presentation_city {
+    display: block;
+    background-color: var(--color-bg-bandeau-primary);
+    box-shadow: 0 0 10px 5px var(--color-shadow-secondary);
+    overflow: hidden;
+
+    img{
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        transition: all var(--transition-primary);
+    }   
+    
+    &:hover {
+        img {
+            opacity: 0.5;
+            transform: scale(1.1);
+        }
+    }    
+}
+

@@ -126,8 +126,18 @@ footer {
             color: var(--color-hover-primary);
         }
 
-        .libandeau_menu-linknk:focus-visible {
+        .bandeau_menu-link:focus-visible {
             outline: 2px solid var(--color-hover-primary);
+        }
+
+        .menu-back {
+            /* padding: 0 1rem;
+            border: solid 1px var(--color-font-menu-primary);
+            border-radius: 6px; */
+
+            span {
+                font-family: "Poppins-Medium", Verdana, sans-serif;
+            }
         }
     }
 
