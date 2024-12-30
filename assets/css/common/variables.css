@@ -12,6 +12,8 @@
     --color-bg-dark-secondary: #3e4b5a;
     --color-bg-dark-tertiary: #3c4d41;
     --color-bg-button: #4e865e;
+    --color-bg-separator: #5c6977;
+    --color-bg-note: #b68d41;
 
     /* SHADOW COLOR */
     --color-shadow-primary: #4d4d4d;
@@ -47,19 +49,4 @@
     /* TRANSITIONS */
     --transition-primary: 0.3s ease-in-out;
     --transition-secondary: 0.5s ease-in-out;
-
-    /* --color-bg-primary-darker: #3e4b5a;
-    --color-bg-primary: #576c79;    
-    --color-bg-secondary: #fdfdfd;
-    --color-bg-secondary-darker: #eeeeee;
-    --color-bg-logo: #7aa5d2;
-    --color-bg-grid-hover: #8aaacc;
-    --color-bg-grid-shadow: #808080;
-    --color-font-bright: #ffffff;
-    --color-font-logo: #93e4ab;
-    --color-font-h2: #758b99;
-    --color-font-h3: #7aa5d2;
-    --color-font-menu-hover: #93e4ab;
-    --color-font-menu-hover-darker: #5aaa72; */
-    
 }

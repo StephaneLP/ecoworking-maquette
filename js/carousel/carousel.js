@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////
-// Paramètres du Carousel
+// Paramètres : Carousel & Éléments du DOM
 /////////////////////////////////////////////////////
 
 const arrCarousel = [
@@ -22,16 +22,14 @@ const arrCarousel = [
 
 const period = 5000
 
-/////////////////////////////////////////////////////
-// Éléments du DOM
-/////////////////////////////////////////////////////
-
 const elCarousel = document.querySelector(".carousel")
-const elPrecedent = document.querySelector(".carousel_btnPrev")
-const elSuivant = document.querySelector(".carousel_btnNext")
-const elTitre = document.querySelector(".carousel_infos-title")
-const elSousTitre = document.querySelector(".carousel_infos-subtitle")
+const elBtnPrev = document.querySelector(".carousel_btnPrev")
+const elBtnNext = document.querySelector(".carousel_btnNext")
+const elTitle = document.querySelector(".carousel_infos-title")
+const elSubTitle = document.querySelector(".carousel_infos-subtitle")
 const elNav = document.querySelector(".carousel_nav")
+const elNavSlideLink = "carousel_nav-slideLink"
+const elNavActive = "carousel_nav-active"
 
 /////////////////////////////////////////////////////
 // Traitement JavaScript
@@ -44,8 +42,8 @@ function initCarousel() {
     max = arrCarousel.length - 1
 
     for (let i =0; i <= max; i++) {
-        elNav.appendChild(addSlideLink("slideLink" + i))
-        document.getElementById("slideLink" + i).addEventListener("click", () => changeImage(i, "nav"))
+        elNav.appendChild(addSlideLink(elNavSlideLink + i))
+        document.getElementById(elNavSlideLink + i).addEventListener("click", () => changeImage(i, "nav"))
     }
 
     changeImage(0, "nav")
@@ -61,13 +59,13 @@ function changeImage (id, mode) {
         if (counter > max) counter = 0
     }
 
-    const arrSliders = document.querySelectorAll(".slideLink")
+    const arrSliders = document.querySelectorAll("." + elNavSlideLink)
     arrSliders.forEach ((el) => {
-        el.classList.remove("active")
+        el.classList.remove(elNavActive)
     })
 
-    const elSlider = document.getElementById("slideLink" + counter)
-    elSlider.classList.add("active")
+    const elSlider = document.getElementById(elNavSlideLink + counter)
+    elSlider.classList.add(elNavActive)
 
     if (mode !== undefined) {
         clearInterval(timer)
@@ -75,19 +73,19 @@ function changeImage (id, mode) {
     }
 
     elCarousel.style.backgroundImage = `url(${arrCarousel[counter].url})`
-    elTitre.innerHTML = arrCarousel[counter].titre
-    elSousTitre.innerHTML = arrCarousel[counter].SousTitre
+    elTitle.innerHTML = arrCarousel[counter].titre
+    elSubTitle.innerHTML = arrCarousel[counter].SousTitre
 }
 
 const addSlideLink = (id) => {
     let el = document.createElement("button")
 
     el.id = id
-    el.className = "slideLink"
+    el.className = elNavSlideLink
 
     return el
 }
 
 window.addEventListener("load", initCarousel)
-elPrecedent.addEventListener("click", () => changeImage(-1, "btn"))
-elSuivant.addEventListener("click", () => changeImage(1, "btn"))
+elBtnPrev.addEventListener("click", () => changeImage(-1, "btn"))
+elBtnNext.addEventListener("click", () => changeImage(1, "btn"))
