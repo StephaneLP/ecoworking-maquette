@@ -30,6 +30,12 @@ h3 {
     color: var(--color-font-title-primary);
 }
 
+h4 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--color-font-title-primary);
+}
+
 button {
     padding: 0;
     border: none;
@@ -43,16 +49,35 @@ button {
 /*************************************************/
 
 .button {
-    padding: 0.4rem 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    padding: 0 1rem;
+    border: none;
     border-radius: 5px;
     background-color: var(--color-bg-button);
     color: var(--color-font-light);
     font-size: 0.9rem;
+    cursor: pointer;
     transition: background-color var(--transition-primary);
 
     &:hover {
         background-color: var(--color-hover-primary);
         color: var(--color-font-light);
+    }
+}
+
+.link {
+    color: var(--color-font-dark);
+    transition: color var(--transition-primary), transform var(--transition-primary);
+
+    &:hover {
+        color: var(--color-hover-primary);
+    }
+
+    &:focus-visible {
+        outline: 2px solid var(--color-hover-primary);
     }
 }
 

@@ -30,7 +30,7 @@
         <nav>
             <ul class="bandeau_menu">
                 <li>
-                    <a class="button menu-back" href="/index.html"><span><</span> Retour</a>
+                    <a class="button" href="/index.html"><span class="menu-back"><</span> Retour</a>
                 </li>
             </ul>
         </nav>  
@@ -41,37 +41,36 @@
     <!-- PRESENTATION -->
     <!---------------------------------------------------------------------------->
     <section class="connect container">
+        <h1>Se Connecter</h1>
         <div class="connect_grid">
             <!-- CONNEXION -->
             <div>
-                <h1>Se Connecter</h1>
-                
-                <form method="get" action="">
+                <h4>Identifiez-vous</h4>
+                <form class="connect_form" method="get" action="">
                     <div>
-                        <label>
-                            <input type="text" tabIndex="1" placeholder="Identifiant" maxLength="50" value="" onChange="" />
-                        </label>
+                        <label>Email</label>
+                        <input type="email" tabIndex="1" placeholder="" maxLength="50" />
                     </div>
                     <div>
-                        <label>
-                            <input type="password" tabIndex="2" placeholder="Mot de passe" maxLength="50" value="" onChange="" />
-                        </label>
-                        <a>Mot de passe oublié ?</a>
+                        <label>Mot de passe</label>
+                        <input type="password" tabIndex="2" placeholder="" maxLength="50" />
                     </div>
-
-                    <input tabIndex="3" type="submit" value="Valider" />
-
-
+                    <a class="link" href="#0">Mot de passe oublié ?</a>
+                    <input class="button" tabIndex="3" type="submit" value="Valider" />
                 </form>
-
-
-
-
             </div>
             <!-- INSCRIPTION -->
             <div>
-                <h2>Inscription</h2>
-                
+                <h4>Pas encore Écoworker ?</h4>
+                <p>
+                    En créant votre compte, vous pourrez :
+                    <ul>
+                        <li>Être informé(e) de tous nos bons plans</li>
+                        <li>Noter les espaces et laisser des commentaires</li>
+                        <li>Mémoriser vos espaces favoris</li>
+                    </ul>
+                </p>
+                <a class="button" href="#0">Créer un compte</a>
             </div>
         </div>
     </section>
