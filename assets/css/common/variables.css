@@ -6,8 +6,8 @@
 
 :root {
     /* BACKGROUND COLOR */
-    --color-bg-light-primary: #f0f0f0;
-    --color-bg-light-decondary: #ffffff;
+    --color-bg-light-primary: #fdfdfd;
+    --color-bg-light-secondary: #e4e6ee;
     --color-bg-dark-primary: #4a5868;
     --color-bg-dark-secondary: #3e4b5a;
     --color-bg-dark-tertiary: #3c4d41;

@@ -2,27 +2,69 @@
 /* CONNEXION
 /*************************************************/
 
-.connect {
-    padding: 5rem 0;
+main {
+    position: relative;
+    background-color: var(--color-bg-light-secondary);
+}
 
-    /* p {
-        margin-top: 2rem;
-        text-align: center;
-        font-size: 1.5rem;
-    } */
+.connect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
     .connect_grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-auto-rows: 1fr;
         gap: 1rem;
-        margin-top: 3rem;
 
-        >div {
+        .connect_grid-signin,  .connect_grid-signup {
             padding: 3rem 6rem 4rem;
             box-shadow: 5px 5px 10px 0 var(--color-shadow-secondary);
             border-radius: 10px;
-            background-color: var(--color-bg-light-decondary);
+            background-color: var(--color-bg-light-primary);
+
+            .button {
+                margin: 2rem auto 0;
+                width: 50%;
+            }
+        }
+
+        .connect_grid-signin {
+            
+        }
+
+        .connect_grid-signup {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--color-bg-dark-primary);
+            color: var(--color-font-light);
+
+            h4 {
+                color: var(--color-font-light);
+            }
+
+            >div {
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 8rem;
+                    margin-top: 2rem;
+                }
+            }
+
+            .button {
+                border: solid 1px var(--color-input-border);
+
+                &:hover {
+                    border: solid 1px var(--color-hover-primary);
+                }
+            }
         }
     }
 }
@@ -58,50 +100,10 @@
     a {
         display: block;
         font-size: 0.9rem;
-    }
 
-    input[type="submit"] {
-        margin: 2rem auto 0;
-        width: 50%;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* LIENS */
-
-.presentation_city {
-    display: block;
-    background-color: var(--color-bg-bandeau-primary);
-    box-shadow: 0 0 10px 5px var(--color-shadow-secondary);
-    overflow: hidden;
-
-    img{
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: 50%;
-        transition: all var(--transition-primary);
-    }   
-    
-    &:hover {
-        img {
-            opacity: 0.5;
-            transform: scale(1.1);
+        span {
+            margin-right: 0.25rem;
+            font-family: "Poppins-Medium", Verdana, sans-serif;
         }
-    }    
+    }
 }
-
