@@ -1,47 +1,34 @@
-@import url("variables.css");
-@import url("fonts.css");
+@import url("../params/fonts.css");
+@import url("../params/variables.css");
 
 /*************************************************/
-/* NORMALISATION
+/* STRUCTURE (STYLE GLOBAL)
 /*************************************************/
 
-* {
-    box-sizing: border-box;
-    margin: 0; 
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: var(--font-family-base);
+    color: var(--color-font-dark)
 }
 
-a {
-    text-decoration: none;
-    outline: none;
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: var(--color-bg-bandeau-secondary);
+    box-shadow: 0 5px 10px var(--color-shadow-primary);
 }
 
-h1, h2, h3 {
-    text-align: center;
-    font-family: var(--font-family-title);
+main {
+    background-color: var(--color-bg-light-primary);
 }
 
-h1, h2 {
-    font-size: 2.5rem;
-    color: var(--color-font-title-secondary);
-}
-
-h3 {
-    font-size: 2rem;
-    color: var(--color-font-title-primary);
-}
-
-h4 {
-    text-align: center;
-    font-size: 1.5rem;
-    color: var(--color-font-title-primary);
-}
-
-button {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    outline: none;
+footer {
+    background-color: var(--color-bg-dark-tertiary);
 }
 
 /*************************************************/
@@ -70,7 +57,7 @@ button {
 
 .link {
     color: var(--color-font-dark);
-    transition: color var(--transition-primary), transform var(--transition-primary);
+    transition: color var(--transition-primary);
 
     &:hover {
         color: var(--color-hover-primary);

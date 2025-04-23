@@ -1,34 +1,4 @@
 /*************************************************/
-/* STRUCTURE (STYLE GLOBAL)
-/*************************************************/
-
-body {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-    font-family: var(--font-family-base);
-    color: var(--color-font-dark)
-}
-
-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    position: sticky;
-    top: 0;
-    z-index: 99;
-    background-color: var(--color-bg-bandeau-secondary);
-    box-shadow: 0 5px 10px var(--color-shadow-primary);
-}
-
-main {
-    background-color: var(--color-bg-light-primary);
-}
-
-footer {
-    background-color: var(--color-bg-dark-tertiary);
-}
-
-/*************************************************/
 /* BANDEAU HEADER
 /*************************************************/
 
@@ -71,7 +41,7 @@ footer {
     }
 
     img:hover, .bandeau_logo-separator:hover, .bandeau_logo-title:hover {
-        &, ~.logo-title {
+        &, ~.bandeau_logo-title {
             color: var(--color-hover-primary);
 
             span {
