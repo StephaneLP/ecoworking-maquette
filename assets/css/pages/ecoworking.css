@@ -2,3 +2,37 @@
 /* ECOWORKING
 /*************************************************/
 
+.ecoworking {
+    padding: 4rem 0;
+
+    .ecoworking_presentation {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: space-between;
+
+        .ecoworking_presentation-description {
+            flex-grow: 2;
+            flex-basis: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+            min-height: 350px;
+
+
+        }
+
+        .ecoworking_presentation-image {
+            flex-grow: 3;
+            flex-basis: 0;
+            /* padding: 15px; */
+            background-image: url(/assets/img/index/place1.jpg);
+            background-position: center;
+            background-size: cover;
+            background-clip: content-box;
+            background-repeat: no-repeat;
+            box-shadow: 0 0 30px 0 var(--color-shadow-primary);
+        }
+    }
+}
