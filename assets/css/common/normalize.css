@@ -8,6 +8,7 @@
 }
 
 a {
+    color: var(--color-font-dark);
     text-decoration: none;
     outline: none;
 }

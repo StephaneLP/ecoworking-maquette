@@ -10,7 +10,7 @@ body {
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     font-family: var(--font-family-base);
-    color: var(--color-font-dark)
+    color: var(--color-font-dark);
 }
 
 header {

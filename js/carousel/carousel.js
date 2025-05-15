@@ -4,14 +4,14 @@
 
 const arrCarousel = [
     {
-        url: "/assets/img/carousel/carrousel1.jpg",
-        titre: "Vous cherchez un espace de travail convivial",
-        SousTitre: "Bureaux en open space ou privatifs",
-    },
-    {
         url: "/assets/img/carousel/carrousel2.jpg",
         titre: "Vous êtes soucieux de l'environnement",
         SousTitre: "Énergie bas carbone - Informatique GreenIt",
+    },
+    {
+        url: "/assets/img/carousel/carrousel1.jpg",
+        titre: "Vous cherchez un espace de travail convivial",
+        SousTitre: "Bureaux en open space ou privatifs",
     },
     {
         url: "/assets/img/carousel/carrousel3.jpg",
