@@ -1,0 +1,147 @@
+/*************************************************/
+/* ECOWORKING PRESENTATION
+/*************************************************/
+
+h4 {
+    text-align: left;
+}
+
+/* PRESENTATION */
+
+.ecoworking_presentation {
+    margin-top: 4rem;
+
+    h1 {
+        padding-left: 0.5rem;
+        /* border-bottom: solid 1px var(--color-div-border-primary); */
+    }
+
+    >div {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        margin-top: 4rem;
+
+        .ecoworking_presentation-titre {
+            flex-grow: 2;
+            flex-basis: 0;
+            
+            >div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 1rem;
+                margin-top: 1rem;
+                padding: 2rem;
+                border: solid 1px var(--color-div-border-primary);
+                border-radius: 5px;
+
+                .ecoworking_coordonnees {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    img {
+                        height: 2rem;
+                        margin-right: 1.5rem;
+                    }
+                    
+                    span {
+                        font-size: 1.2rem;
+                    }
+
+                    a {
+                        text-decoration: underline;
+                    }
+                }            
+            }
+        }
+
+        .ecoworking_presentation-image {
+            flex-grow: 3;
+            flex-basis: 0;
+            background-image: url(/assets/img/index/place1.jpg);
+            background-position: center;
+            background-size: cover;
+            background-clip: content-box;
+            background-repeat: no-repeat;
+            box-shadow: 0 0 30px 0 var(--color-shadow-primary);
+        }
+    }
+}
+
+/* INFOS */
+
+.ecoworking_infos {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 3rem;
+    
+    .ecoworking_infos-equipement {
+        flex-grow: 3;
+        flex-basis: 0;
+
+        >div {
+            margin-top: 1rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+
+            >div {
+                background-color: aquamarine;
+            }
+        }
+    }
+    
+    .ecoworking_infos-pratiques {
+        flex-grow: 2;
+        flex-basis: 0;
+
+        >div {
+            margin-top: 1rem;
+            padding: 2rem;
+            border: solid 1px var(--color-div-border-primary);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .infos-horaires, .infos-prix {
+                display: grid;
+                grid-template-columns: max-content 1fr;
+                gap: 0.5rem;
+            } 
+
+            span {
+                padding-right: 2rem;
+                font-weight: bold;
+            }
+
+            h5 {
+                color: var(--color-font-title-primary-bis);
+                border-bottom: solid 1px var(--color-div-border-primary);
+            }
+        }
+    }
+
+}
+
+/* LOCALISATION */
+
+.ecoworking_localisation {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    .map {
+        margin-top: 0.5rem;
+        height: 500px;
+        border: solid 1px var(--color-div-border-primary);
+        background-image: url(/assets/img/ecoworking/map.png);
+        background-position: center;
+        background-size: cover;
+        background-clip: content-box;
+        background-repeat: no-repeat;
+    }
+}

@@ -13,7 +13,7 @@
     --color-bg-dark-tertiary: #3c4d41;
     --color-bg-button: #4e865e;
     --color-bg-separator: #647383;
-    --color-bg-note: #b68d41;
+    --color-bg-note: #FDD663;
 
     /* SHADOW COLOR */
     --color-shadow-primary: #4d4d4d;
@@ -24,8 +24,8 @@
     --color-font-medium: #bdc8d4;
     --color-font-dark: #38414d;
     --color-font-title-primary: #56606b;
-    --color-font-title-secondary: #7e8c9b;
-    /* --color-font-title-secondary: #4e8f60; */
+    --color-font-title-primary-bis: #4e8f60;
+    --color-font-title-secondary: #748292;
     --color-font-title-tertiary: #f5cb7e;
     --color-font-link-primary: #b37d19;
 
@@ -50,6 +50,7 @@
     /* FONT FAMILY */
     --font-family-base: 'Roboto-Regular', Verdana, sans-serif;
     --font-family-title: cursive, Verdana, sans-serif;
+    --font-family-etoile: 'jua', Verdana, sans-serif;
 
     /* TRANSITIONS */
     --transition-primary: 0.3s ease-in-out;

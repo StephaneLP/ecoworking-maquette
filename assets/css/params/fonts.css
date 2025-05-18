@@ -38,4 +38,7 @@
     font-family: "Roboto-Medium";
     src: url(/assets/fonts/Roboto/Roboto-Medium.ttf);
 }
-
+@font-face {
+    font-family: "Jua";
+    src: url(/assets/fonts/Jua/Jua-Regular.ttf);
+}

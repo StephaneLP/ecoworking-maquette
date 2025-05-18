@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/common/normalize.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/common/header.css">
     <!-- Feuille de style spécifique ------------------------------------->
-    <link rel="stylesheet" type="text/css" href="/assets/css/pages/ecoworking.css">
+    <link rel="stylesheet" type="text/css" href="ecoworking.css">
     <link rel="icon" href="/assets/img/logos/favicon.png" type="image/x-icon">
     <title>ÉcoWorking</title>
 </head>
@@ -32,7 +32,7 @@
             <ul class="bandeau_menu">
                 <!-- MENU DÉROULANT ESPACES -->
                 <li>
-                    <span class="bandeau_menu-libelle">Espaces</span>
+                    <span class="bandeau_menu-libelle">Espaces d'écoworking</span>
                     <div class="bandeau_menu-dropdown">
                         <div class="container">
                             <div>
@@ -63,10 +63,6 @@
                         </div>
                     </div>
                 </li>
-                <!-- MENU RECHERCHE -->
-                <li>
-                    <a class="bandeau_menu-link" href="/pages/ecoworkings/search.html">Recherche Avancée</a>
-                </li>
                 <!-- BOUTON SE SONNECTER -->
                 <li>
                     <a class="button" href="/pages/account/connect.html">Se connecter</a>
@@ -77,13 +73,16 @@
 </header>
 <main>
     <!---------------------------------------------------------------------------->
-    <!-- ECOWORKING -->
+    <!-- ECOWORKING PRESENTATION-->
     <!---------------------------------------------------------------------------->
-    <section class="container ecoworking">
-        <div class="ecoworking_presentation">
+    <section class="ecoworking_presentation container">
+        <h1>Green Place</h1>
+        <div>
+            <!-- IMAGE -->
+            <div class="ecoworking_presentation-image"></div>
             <!-- TITRE ET COORDONNÉES -->
-             <div class="ecoworking_presentation-titre">
-                <h1>Green Place</h1>
+            <div class="ecoworking_presentation-titre">
+                <h4>Coordonnées</h4>
                 <div>
                     <div class="ecoworking_coordonnees"> 
                         <img src="/assets/img/icones/globe.png" alt="email">
@@ -105,14 +104,68 @@
                         </div>
                     </div>
                 </div>
-             </div>
-            <!-- IMAGE -->
-             <div class="ecoworking_presentation-image">
-             </div>
+            </div>            
         </div>
 
+    </section>
+    <!---------------------------------------------------------------------------->
+    <!-- ECOWORKING INFOS-->
+    <!---------------------------------------------------------------------------->
+    <section class="ecoworking_infos container">
+        <!-- SALLES & EQUIPEMENTS -->
+        <div class="ecoworking_infos-equipement">
+            <h4>Salles / Équipement</h4>
+            <div>
+                <div>a</div>
+                <div>a</div>
+                <div>a</div>
+                <div>a</div>
+                <div>a</div>
+                <div>a</div>
+                <div>a</div>
+                <div>a</div>
+            </div>
+        </div>
+        <!-- INFOS PRATIQUES -->
+        <div class="ecoworking_infos-pratiques">
+            <h4>Infos Pratiques</h4>
+            <div>
+                <div class="infos-acces">
+                    <span>Accès sécurisé 365j/an 24h/24</span>
+                </div>
+                <h5>Accueil</h5>
+                <div class="infos-horaires">
+                    <span>Lundi au Vendredi</span>
+                    <div class="horaires-lundi">08h00 - 19h00</div>
+                    <span>Samedi</span>
+                    <div class="horaires-mardi">08h00 - 17h00</div>
+                    <span>Dimanche</span>
+                    <div class="horaires-dimanche">Fermé</div>
+                </div>
+                <h5>Tarifs</h5>
+                <div class="infos-prix">
+                    <span>Heure</span>
+                    <div class="horaires-lundi">6€</div>
+                    <span>Demi-Journée</span>
+                    <div class="horaires-mardi">12€</div>
+                    <span>Journée</span>
+                    <div class="horaires-mercerdi">18€</div>
+                    <span>Semaine</span>
+                    <div class="horaires-jeudi">75€</div>
+                    <span>Mois</span>
+                    <div class="horaires-vendredi">190€</div>
+                </div>
 
+            </div>
+        </div>
+    </section>
 
+    <!---------------------------------------------------------------------------->
+    <!-- ECOWORKING LOCALISATION-->
+    <!---------------------------------------------------------------------------->
+    <section class="ecoworking_localisation container">
+        <h4>Localisation</h4>
+        <div class="map"></div>
     </section>
 </main>
 <footer>
