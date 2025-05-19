@@ -85,12 +85,20 @@ h4 {
 
         >div {
             margin-top: 1rem;
+            padding: 2rem 0;
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 3rem;
 
             >div {
-                background-color: aquamarine;
+                display: flex;
+                flex-direction: column;
+
+                font-size: 1rem;
+                img {
+                    width: 3.5rem;
+                    margin-bottom: 0.5rem;
+                }
             }
         }
     }
