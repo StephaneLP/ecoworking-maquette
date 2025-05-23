@@ -160,14 +160,16 @@
 
 .selection {
     padding: 5rem 0;
-    background-image: url(/assets/img/index/espace.jpg);
+    /* background-image: url(/assets/img/index/espace.jpg);
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
+    /* background-color: var(--color-bg-dark-primary); */
+    background-color: var(--color-bg-light-secondary);
 
-    h2 {
+    /* h2 {
        color: var(--color-font-light);
-    }
+    } */
 
     .selection_grid {
         display: grid;
@@ -183,8 +185,8 @@
 .selection_place {
     display: flex;
     flex-direction: column;
-    background-color: var(--color-bg-dark-secondary);
-    box-shadow: 0 0 10px 6px #0a0b0e;
+    background-color: var(--color-bg-dark-primary);
+    box-shadow: 0 0 10px 6px var(--color-shadow-secondary);
 
     &:hover {
         .selection_place-containt {

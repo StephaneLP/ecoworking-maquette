@@ -7,17 +7,17 @@
 :root {
     /* BACKGROUND COLOR */
     --color-bg-light-primary: #ffffff;
-    --color-bg-light-secondary: #e4e6ee;
+    --color-bg-light-secondary: #edeef1;
     --color-bg-dark-primary: #4a5868;
     --color-bg-dark-secondary: #3e4b5a;
-    --color-bg-dark-tertiary: #3c4d41;
+    --color-bg-dark-tertiary: #425046;
     --color-bg-button: #4e865e;
     --color-bg-separator: #647383;
     --color-bg-note: #FDD663;
 
     /* SHADOW COLOR */
-    --color-shadow-primary: #4d4d4d;
-    --color-shadow-secondary: #9c9c9c;
+    --color-shadow-primary: #78818b;
+    --color-shadow-secondary: #96a1ac;
 
     /* FONT COLOR */
     --color-font-light: #ffffff;
