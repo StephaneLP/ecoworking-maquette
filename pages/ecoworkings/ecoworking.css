@@ -238,31 +238,26 @@ h4 {
     margin-top: 3rem;
     margin-bottom: 4rem;
 
-    .ecoworking_avis-recapitulatif {
+    .ecoworking_avis-moyenne {
         margin-top: 2rem;
         display: flex;
         flex-direction: row;
-        gap: 2rem;
+        align-items: center;
+        gap: 0.5rem;
 
-        .etoiles >div {
-          font-size: 2.2rem;
+        .libelle {
+            font-size: 1.6rem;
         }
 
-        .note_moyenne {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 0.5rem;
+        .etoiles >div {
+            margin-bottom: -5px;
+            font-size: 1.8rem;
+        }
 
-            .note_moyenne-nombre {
-                font-size: 2.2rem;
-                color: var(--color-font-title-primary);
-            }
-            
-            .note_moyenne-libelle {
-                font-size: 1.2rem;
-            }
-        }        
+        .note {
+            font-size: 1.1rem;
+            color: var(--color-font-title-primary);
+        }       
     }
 
     .ecoworking_avis-liste {
@@ -273,7 +268,7 @@ h4 {
         gap: 1.5rem;
 
         .avis {
-            padding: 1rem 2rem;
+            padding: 2rem;
             border: solid 1px var(--color-div-border-primary);
             border-radius: 6px;
 
@@ -282,23 +277,39 @@ h4 {
                 flex-direction: row;
                 justify-content: space-between;
 
-                .avis-header-date {
+                .avis-header-left {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
                     img {
+                        margin-right: 1rem;
                         width: 2.5rem;
                         background-color: var(--color-bg-button);
                         border-radius: 50%;
                     }
 
+                    .pseudo {
+                        font-weight: 600;
+                        color: var(--color-font-title-primary);
+                    }
 
+                    .date {
+                        font-size: 0.9rem;
+                        text-align: center;
+                    }
                 }
 
-
-
-                .etoiles >div {
-                    font-size: 1.4rem;
+                .etoiles {
+                    >div {
+                        font-size: 1.4rem;
+                    }
                 }
             }
 
+            .commentaire {
+                margin-top: 1.5rem;
+            }
 
         }
     }
