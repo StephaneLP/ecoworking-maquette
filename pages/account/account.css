@@ -59,7 +59,7 @@ main {
             }
 
             .button {
-                border: solid 1px var(--color-input-border);
+                border: solid 0px var(--color-input-border);
 
                 &:hover {
                     border: solid 1px var(--color-hover-primary);
