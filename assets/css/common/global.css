@@ -20,7 +20,7 @@ header {
     top: 0;
     z-index: 99;
     background-color: var(--color-bg-bandeau-secondary);
-    box-shadow: 0 5px 10px var(--color-shadow-primary);
+    box-shadow: 0 2px 10px var(--color-shadow-primary);
 }
 
 main {

@@ -129,7 +129,7 @@
     left: 0;
     width: 100%;
     background-color: var(--color-bg-bandeau-submenu);
-    box-shadow: 0 5px 10px var(--color-shadow-primary);
+    box-shadow: 0 2px 10px var(--color-shadow-primary);
 
     >div {
         display: flex;

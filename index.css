@@ -123,10 +123,11 @@
         gap: 5rem;
         margin-top: 5rem;
 
-        h3 {
-            margin-top: 2rem;
-        }
     }
+
+    h3 {
+        margin-top: 2rem;
+    }    
 }
 
 /* LIENS */
